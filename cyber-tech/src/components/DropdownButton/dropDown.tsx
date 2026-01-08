@@ -1,11 +1,12 @@
 import { useState } from "react";
+import styles from "./dropDown.module.css"
 
 function Dropdown() {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
-      <button onClick={() => setOpen(!open)}>Temporadas ⌄</button>
+    <div className={styles.container}>
+      <a onClick={() => setOpen(!open)}>Temporadas</a>
 
       {open && (
         <div>
@@ -13,7 +14,7 @@ function Dropdown() {
           <a href="">Decode</a>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

@@ -1,6 +1,8 @@
 * {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
+    
 }
 
 body {
@@ -12,9 +14,13 @@ p {
     font-size: 16px;
 }
 h3 {
+    font-family: "Anton", sans-serif;
     font-size: 25px;
 }
-
+h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+}
 h2 {
     display: none;
 }

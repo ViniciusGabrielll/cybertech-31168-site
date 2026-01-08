@@ -1,0 +1,42 @@
+.container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+  align-items: center;
+  padding-right: 70px;
+  padding-left: 150px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hidden {
+  transform: translateY(-300%);
+}
+
+.container div {
+  display: flex;
+}
+
+.container div a {
+  color: black;
+  font-size: 16px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container div a:hover {
+    background-color: rgb(232, 232, 232);
+}
+.logo {
+  position: absolute;
+  width: 130px;
+  top: 0px;
+  left: 10px;
+}
