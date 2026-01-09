@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./navBar.module.css";
 import Dropdown from "../DropdownButton/dropDown";
 import logo from "../../assets/images/logo.png";
+import instagramIcon from "../../assets/images/icons/Instagram.png";
+import gmailIcon from "../../assets/images/icons/Gmail.png";
 
 function NavBar() {
   const [hidden, setHidden] = useState(false);
@@ -36,10 +38,10 @@ function NavBar() {
       </div>
       <div>
         <a href="">
-          <img src="" alt="Instagram" />
+          <img src={instagramIcon} alt="Instagram" className={styles.icon}/>
         </a>
         <a href="">
-          <img src="" alt="Gmail" />
+          <img src={gmailIcon} alt="Gmail" className={styles.icon}/>
         </a>
       </div>
     </nav>
