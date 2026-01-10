@@ -17,12 +17,13 @@ body {
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   text-align: justify;
 }
 h3 {
   font-family: "Anton", sans-serif;
-  font-size: 25px;
+  font-size: 70px;
+  font-weight: 300;
 }
 h1 {
   font-family: "Anton", sans-serif;
@@ -34,4 +35,15 @@ h1 {
 }
 h2 {
   display: none;
+}
+
+section {
+  padding: 50px var(--padding-page) 0px var(--padding-page);
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+section img {
+  width: 40%;
 }

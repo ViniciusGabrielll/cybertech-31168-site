@@ -4,7 +4,8 @@ import Footer from "../../components/Footer/footer";
 import NavBar from "../../components/NavBar/navBar";
 import instagramIcon from "../../assets/images/icons/InstagramPuro.png";
 import redirectIcon from "../../assets/images/icons/redirect.png";
-
+import First from "../../assets/images/First.png";
+import FTCSobreImg from "../../assets/images/OQueEFTC.png";
 function Home() {
   return (
     <>
@@ -27,25 +28,32 @@ function Home() {
           </p>
 
           <div className={styles.headerButtonsContainer}>
-            <Button link="" text="Sobre nós" icon={redirectIcon}/>
-            <Button link="" text="Instagram" icon={instagramIcon}/>
+            <Button link="" text="Sobre nós" icon={redirectIcon} />
+            <Button link="" text="Instagram" icon={instagramIcon} />
           </div>
         </div>
       </header>
       <main>
+        <img src={First} alt="Imagem FTC" className={styles.First} />
         <section>
           <h2>FIRST</h2>
-          <img src="./src/assets/images/imagem" alt="Imagem FTC" />
           <article>
             <h3>O que é a FTC</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Temporibus inventore vero assumenda voluptatibus dolor pariatur
               ipsa recusandae vel facere animi voluptate magni dolores est
-              veritatis repellendus, cum adipisci in placeat?
+              veritatis repellendus, cum adipisci in placeat?Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Temporibus inventore vero
+              assumenda voluptatibus dolor pariatur ipsa recusandae vel facere
+              animi voluptate magni dolores est veritatis repellendus, cum
+              adipisci in placeat?
             </p>
           </article>
-          <img src="" alt="Imagem de um competidor segurando o robô" />
+          <img
+            src={FTCSobreImg}
+            alt="Imagem de um competidor segurando o robô"
+          />
         </section>
         <section>
           <h2>Sobre</h2>
