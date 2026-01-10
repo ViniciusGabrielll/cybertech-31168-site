@@ -20,10 +20,13 @@ p {
   font-size: 20px;
   text-align: justify;
 }
-h3 {
+h3, span {
   font-family: "Anton", sans-serif;
-  font-size: 70px;
+  font-size: 80px;
   font-weight: 300;
+  line-height: 1;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 h1 {
   font-family: "Anton", sans-serif;
@@ -41,9 +44,20 @@ section {
   padding: 50px var(--padding-page) 0px var(--padding-page);
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  text-align: start;
   gap: 50px;
 }
 
 section img {
   width: 40%;
+  height: auto;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.red {
+  color: var(--primeira-cor);
 }

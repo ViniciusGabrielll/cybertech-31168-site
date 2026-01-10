@@ -6,6 +6,12 @@ import instagramIcon from "../../assets/images/icons/InstagramPuro.png";
 import redirectIcon from "../../assets/images/icons/redirect.png";
 import First from "../../assets/images/First.png";
 import FTCSobreImg from "../../assets/images/OQueEFTC.png";
+import quemSomos from "../../assets/images/QuemSomos.png";
+import cyberExperiencePernambuco from "../../assets/images/cyberExperiencePernambuco.png";
+import cyberExperienceEscolas from "../../assets/images/cyberExperienceEscolas.png";
+import temporadasImg from "../../assets/images/temporadasImg.png";
+import patrocinadoresImg from "../../assets/images/patrocinadores.png";
+
 function Home() {
   return (
     <>
@@ -14,7 +20,7 @@ function Home() {
         <div className={styles.textsContainer}>
           <div className={styles.titleContainer}>
             <div>
-              <h1 className={styles.italic}>CYBER</h1>
+              <h1 className="italic">CYBER</h1>
               <h1>TECH</h1>
             </div>
             <h1 className={styles.idEquipe}>#31168</h1>
@@ -27,7 +33,7 @@ function Home() {
             numquam laboriosam natus cum.
           </p>
 
-          <div className={styles.headerButtonsContainer}>
+          <div className={styles.buttonsContainer}>
             <Button link="" text="Sobre nós" icon={redirectIcon} />
             <Button link="" text="Instagram" icon={instagramIcon} />
           </div>
@@ -38,7 +44,9 @@ function Home() {
         <section>
           <h2>FIRST</h2>
           <article>
-            <h3>O que é a FTC</h3>
+            <h3>
+              O que é a <span className="italic red">FTC</span>
+            </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Temporibus inventore vero assumenda voluptatibus dolor pariatur
@@ -57,34 +65,56 @@ function Home() {
         </section>
         <section>
           <h2>Sobre</h2>
+          <img src={quemSomos} alt="Equipe junta e pilotos analisando o jogo" />
           <article>
-            <h3>Quem somos</h3>
+            <h3>
+              <span className="red">Quem</span>{" "}
+              <span className="italic">somos</span>
+            </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
               veritatis at? Quasi provident voluptatem quam debitis doloribus
               exercitationem accusamus maxime saepe aspernatur sapiente, laborum
-              nam tenetur quidem sed porro unde!
+              nam tenetur quidem sed porro unde!Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Omnis, veritatis at? Quasi provident
+              voluptatem quam debitis doloribus exercitationem accusamus maxime
+              saepe aspernatur sapiente, laborum nam tenetur quidem sed porro
+              undeLorem ipsum dolor sit amet consectetur adipisicing elit.
+              Omnis, veritatis at? Quasi provident voluptatem quam debitis
+              doloribus exercitationem accusamus maxime saepe aspernatur
+              sapiente, laborum nam tenetur quidem sed porro unde
             </p>
-            <Button link="" text="Saiba mais" />
+            <Button link="" text="Sobre nós" icon={redirectIcon} />
           </article>
-          <img src="" alt="Equipe junta e pilotos analisando o jogo" />
         </section>
-        <section>
+        <section className={styles.cyberExperienceContainer}>
           <h2>Cyber Experience</h2>
           <article>
-            <h3>CYBERSTART</h3>
+            <h3 className="italic">CYBERSTART</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus nesciunt commodi saepe unde! Nihil quod, natus dolor
-              veniam et iusto rem cumque quam. Alias ducimus ipsum consequatur
-              dolorum magni. Libero.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
             </p>
           </article>
           <article>
             <h3>IMPACTO</h3>
-            <div>
-              <img src="" alt="Impacto em pernambuco" />
-              <img src="" alt="Impacto nas escolas e pessoas" />
+            <div className={styles.impactoContainer}>
+              <img
+                src={cyberExperiencePernambuco}
+                alt="Impacto em pernambuco"
+              />
+              <img
+                src={cyberExperienceEscolas}
+                alt="Impacto nas escolas e pessoas"
+              />
             </div>
           </article>
         </section>
@@ -96,33 +126,40 @@ function Home() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Blanditiis, veniam, dolor nulla aspernatur quos provident atque
               sed delectus ratione pariatur dolore accusamus inventore alias
-              necessitatibus corporis eos laboriosam fugit doloribus?
+              necessitatibus corporis eos laboriosam fugit doloribus?Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Blanditiis, veniam,
+              dolor nulla aspernatur quos provident atque sed delectus ratione
+              pariatur dolore accusamus inventore alias necessitatibus corporis
+              eos laboriosam fugit doloribus?
             </p>
-            <Button link="" text="Saiba mais" />
+            <div className={styles.buttonsContainer}>
+              <Button link="" text="Into The Deep" icon={redirectIcon} />
+              <Button link="" text="Decode" icon={redirectIcon} />
+            </div>
           </article>
-          <img
-            src="./src/assets/images/imagem"
-            alt="Temporadas que participamos"
-          />
+          <img src={temporadasImg} alt="Temporadas que participamos" />
         </section>
         <section>
           <h2>Patrocinadores</h2>
+          <img src={patrocinadoresImg} alt="Nossos Patrocinadores" />
           <article>
-            <h3>Patrocinadores</h3>
+            <h3 className="red">Patrocinadores</h3>
             <div>
               <div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Excepturi sapiente itaque quisquam quos aut sed, harum nemo
                   neque enim saepe reprehenderit, nisi consequuntur eos.
+                  Molestias ratione soluta provident aspernatur doloremque!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi sapiente itaque quisquam quos aut sed, harum nemo
+                  neque enim saepe reprehenderit, nisi consequuntur eos.
                   Molestias ratione soluta provident aspernatur doloremque!
                 </p>
-                <div>
-                  <Button link="" text="Saiba mais" />
-                  <Button link="" text="Tornar-se um Patrocinador" />
+                <div className={styles.buttonsContainer}>
+                  <Button link="" text="Saiba mais" icon={redirectIcon}/>
+                  <Button link="" text="Tornar-se Patrocinador" icon={redirectIcon}/>
                 </div>
               </div>
-              <img src="" alt="Nossos Patrocinadores" />
             </div>
           </article>
         </section>
