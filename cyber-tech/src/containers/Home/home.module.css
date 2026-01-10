@@ -1,0 +1,40 @@
+.headerContainer {
+    background-image: url("../../assets/images/fundoHeader.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    padding: var(--padding-page);
+}
+
+
+.textsContainer {
+    width: 40%;
+}
+.italic {
+    font-style: italic;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.idEquipe {
+    color: var(--segunda-cor);
+    font-size: 100px;
+    padding-left: 20px;
+}
+
+.textHeader {
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.headerButtonsContainer {
+    display: flex;
+    gap: 50px;
+}

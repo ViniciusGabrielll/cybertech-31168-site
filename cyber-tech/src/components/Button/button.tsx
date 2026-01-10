@@ -1,14 +1,18 @@
+import styles from "./button.module.css";
+
 type ButtonProps = {
     link: string;
     text?: string;
+    icon?: string;
 }
 
 
-function Button({link, text = "botão"}: ButtonProps) {
+function Button({link, icon, text = "botão"}: ButtonProps) {
     return (
-        <>
-            <a href={link}>{text}</a>
-        </>
+        <a className={styles.button} href={link}>
+            <img src={icon}/>
+            <p>{text}</p>
+        </a>
     )
 }
 

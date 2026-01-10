@@ -1,26 +1,37 @@
+:root {
+  --primeira-cor: #58060c;
+  --segunda-cor: #bbbbbb;
+  --terceira-cor: #4e4e4e;
+  --padding-page: 120px;
+}
+
 * {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    box-sizing: border-box;
-    
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 p {
-    font-size: 16px;
+  font-size: 16px;
+  text-align: justify;
 }
 h3 {
-    font-family: "Anton", sans-serif;
-    font-size: 25px;
+  font-family: "Anton", sans-serif;
+  font-size: 25px;
 }
 h1 {
-    font-family: "Anton", sans-serif;
-    font-size: 50px;
+  font-family: "Anton", sans-serif;
+  font-size: 140px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  line-height: 1.1;
 }
 h2 {
-    display: none;
+  display: none;
 }
