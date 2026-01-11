@@ -3,8 +3,25 @@ import styles from "./footer.module.css";
 import logo from "../../assets/images/logo.png";
 import instagramIcon from "../../assets/images/icons/Instagram.png";
 import gmailIcon from "../../assets/images/icons/Gmail.png";
+import { useState } from "react";
 
 function Footer() {
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [numero, setNumero] = useState("");
+  const [mensagem, setMensagem] = useState("");
+
+  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    if (nome === "" || email === "" || mensagem === "") {
+      alert("Preencha todos os campos");
+      return;
+    }
+
+    alert("TESTE")
+  }
+
   return (
     <footer className={styles.footerContainer}>
       <img src={logo} className={styles.footerLogo} />
@@ -28,22 +45,30 @@ function Footer() {
 
         <article>
           <h4>Manda um email!</h4>
-          <form>
+          <form onSubmit={sendEmail}>
             <label htmlFor="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+            <input
+              type="text"
+              name="nome"
+              placeholder="Digite seu nome"
+              onChange={(e) => setNome(e.target.value)}
+              value={nome}
+            />
             <label htmlFor="email">Email</label>
             <input
-              type="email"
-              id="email"
+              type="text"
               name="email"
-              placeholder="email@gmail.com"
+              placeholder="Digite seu email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
             />
             <label htmlFor="email">Número</label>
             <input
               type="text"
-              id="numero"
               name="numero"
-              placeholder="(99) 99999-9999"
+              placeholder="Digite seu número"
+              onChange={(e) => setNumero(e.target.value)}
+              value={numero}
             />
 
             <label htmlFor="motivo">Motivo</label>
@@ -55,7 +80,15 @@ function Footer() {
             </select>
 
             <label htmlFor="mensagem">Mensagem</label>
-            <input type="text" id="mensagem" name="mensagem" placeholder="Mensagem"></input>
+            <input
+              type="text"
+              name="mensagem"
+              placeholder="Mensagem"
+              onChange={(e) => setMensagem(e.target.value)}
+              value={mensagem}
+            />
+
+            <input type="submit" value="Enviar" />
           </form>
         </article>
       </section>
