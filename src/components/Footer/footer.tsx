@@ -27,11 +27,35 @@ function Footer() {
         </article>
 
         <article>
+          <h4>Manda um email!</h4>
           <form>
-            <label htmlFor="nome"></label>
-            <input type="text" name="nome">
-              Seu nome
-            </input>
+            <label htmlFor="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@gmail.com"
+            />
+            <label htmlFor="email">Número</label>
+            <input
+              type="text"
+              id="numero"
+              name="numero"
+              placeholder="(99) 99999-9999"
+            />
+
+            <label htmlFor="motivo">Motivo</label>
+            <select name="motivo">
+              <option value="sugestao">FeedBack</option>
+              <option value="recife">Dúvida</option>
+              <option value="olinda">Proposta</option>
+              <option value="jaboatao">Outro</option>
+            </select>
+
+            <label htmlFor="mensagem">Mensagem</label>
+            <input type="text" id="mensagem" name="mensagem" placeholder="Mensagem"></input>
           </form>
         </article>
       </section>
