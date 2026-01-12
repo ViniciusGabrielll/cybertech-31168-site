@@ -47,7 +47,7 @@ function Form() {
         "nz3gLrLYCePlYiNw6"
       )
       .then(
-        (response) => {
+        () => {
           alert(
             "EMAIL ENVIADO! Iremos responder no seu número ou email assim que possível! Agradecemos a mensagem!"
           );
