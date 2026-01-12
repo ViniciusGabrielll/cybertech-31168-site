@@ -1,20 +1,50 @@
 import { useState } from "react";
+import emailJs from "@emailjs/browser";
 
 function Form() {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [numero, setNumero] = useState("");
   const [mensagem, setMensagem] = useState("");
+  const [motivo, setMotivo] = useState("");
 
   function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    if (nome === "" || email === "" || mensagem === "") {
+    if (nome === "" || email === "" || mensagem === "" || numero === "" || motivo === "") {
       alert("Preencha todos os campos");
       return;
     }
 
-    alert("TESTE");
+    const templateParams = {
+      nome: nome,
+      motivo: motivo,
+      mensagem: mensagem,
+      email: email,
+      numero: numero
+    };
+
+    emailJs
+      .send(
+        "service_o7ooogj",
+        "template_s7v3jsd",
+        templateParams,
+        "nz3gLrLYCePlYiNw6"
+      )
+      .then(
+        (response) => {
+          alert(
+            "EMAIL ENVIADO! Iremos responder no seu número ou email assim que possível! Agradecemos a mensagem!"
+          );
+          setNome("");
+          setEmail("");
+          setMensagem("");
+          setNumero("");
+        },
+        (err) => {
+          console.log("ERRO: ", err);
+        }
+      );
   }
 
   return (
@@ -29,7 +59,7 @@ function Form() {
       />
       <label htmlFor="email">Email</label>
       <input
-        type="text"
+        type="email"
         name="email"
         placeholder="Digite seu email"
         onChange={(e) => setEmail(e.target.value)}
@@ -37,7 +67,7 @@ function Form() {
       />
       <label htmlFor="email">Número</label>
       <input
-        type="text"
+        type="number"
         name="numero"
         placeholder="Digite seu número"
         onChange={(e) => setNumero(e.target.value)}
@@ -45,11 +75,12 @@ function Form() {
       />
 
       <label htmlFor="motivo">Motivo</label>
-      <select name="motivo">
-        <option value="sugestao">FeedBack</option>
-        <option value="recife">Dúvida</option>
-        <option value="olinda">Proposta</option>
-        <option value="jaboatao">Outro</option>
+      <select value={motivo} name="motivo" onChange={(e) => setMotivo(e.target.value)}>
+        <option value="">Selecione o motivo</option>
+        <option value="FeedBack">FeedBack</option>
+        <option value="Dúvida">Dúvida</option>
+        <option value="Proposta">Proposta</option>
+        <option value="Outro">Outro</option>
       </select>
 
       <label htmlFor="mensagem">Mensagem</label>
