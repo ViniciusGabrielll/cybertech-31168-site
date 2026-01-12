@@ -1,18 +1,39 @@
-.footerContainer{
-    width: 100%;
-    background-color: var(--primeira-cor);
-    color: white;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footerContainer {
+  width: 100%;
+  background-color: var(--primeira-cor);
+  color: white;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.footerContainer section {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center;
+}
+
+.footerPatrocinadores {
+  width: 100%;
+}
 .footerLogo {
-    width: 200px;
-    transform: translateY(-100px);
+  position: absolute;
+  width: 200px;
+  transform: translateY(-100px);
 }
 
 .icon {
   width: 50px;
+}
+
+.contatoFooter {
+  background-color: var(--terceira-cor);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
 }

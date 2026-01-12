@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form .informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+.form input,
+select, textarea {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.form textarea { 
+  min-height: 100px;
+  resize: vertical;
+  text-align: justify;
+}
+
+.enviar {
+  cursor: pointer;
+  transition: all .1s;
+}
+.enviar:hover {
+  background-color: var(--primeira-cor);
+  color: white;
+}

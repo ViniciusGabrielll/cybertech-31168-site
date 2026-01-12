@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailJs from "@emailjs/browser";
+import styles from "./form.module.css";
 
 function Form() {
   const [nome, setNome] = useState("");
@@ -8,10 +9,24 @@ function Form() {
   const [mensagem, setMensagem] = useState("");
   const [motivo, setMotivo] = useState("");
 
+  function formatarTelefone(valor: string) {
+  return valor
+    .replace(/\D/g, "")
+    .replace(/^(\d{2})(\d)/, "($1) $2")
+    .replace(/(\d{5})(\d)/, "$1-$2")
+    .slice(0, 15);
+}
+
   function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    if (nome === "" || email === "" || mensagem === "" || numero === "" || motivo === "") {
+    if (
+      nome === "" ||
+      email === "" ||
+      mensagem === "" ||
+      numero === "" ||
+      motivo === ""
+    ) {
       alert("Preencha todos os campos");
       return;
     }
@@ -21,7 +36,7 @@ function Form() {
       motivo: motivo,
       mensagem: mensagem,
       email: email,
-      numero: numero
+      numero: numero,
     };
 
     emailJs
@@ -48,51 +63,65 @@ function Form() {
   }
 
   return (
-    <form onSubmit={sendEmail}>
-      <label htmlFor="nome">Nome</label>
-      <input
-        type="text"
-        name="nome"
-        placeholder="Digite seu nome"
-        onChange={(e) => setNome(e.target.value)}
-        value={nome}
-      />
-      <label htmlFor="email">Email</label>
-      <input
-        type="email"
-        name="email"
-        placeholder="Digite seu email"
-        onChange={(e) => setEmail(e.target.value)}
-        value={email}
-      />
-      <label htmlFor="email">Número</label>
-      <input
-        type="number"
-        name="numero"
-        placeholder="Digite seu número"
-        onChange={(e) => setNumero(e.target.value)}
-        value={numero}
-      />
+    <form onSubmit={sendEmail} className={styles.form}>
+      <div className={styles.informacoes}>
+        <div>
+          <label htmlFor="nome">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            placeholder="Digite seu nome"
+            onChange={(e) => setNome(e.target.value)}
+            value={nome}
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Digite seu email"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Número</label>
+          <input
+            type="tel"
+            name="numero"
+            placeholder="(99) 99999-9999"
+            onChange={(e) => setNumero(formatarTelefone(e.target.value))}
+            value={numero}
+          />
+        </div>
+        <div>
+          <label htmlFor="motivo">Motivo</label>
+          <select
+            value={motivo}
+            name="motivo"
+            onChange={(e) => setMotivo(e.target.value)}
+          >
+            <option value="">Selecione o motivo</option>
+            <option value="FeedBack">FeedBack</option>
+            <option value="Dúvida">Dúvida</option>
+            <option value="Proposta">Proposta</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label htmlFor="mensagem">Mensagem</label>
+        <textarea
+          name="mensagem"
+          placeholder="Mensagem"
+          onChange={(e) => setMensagem(e.target.value)}
+          value={mensagem}
+          className={styles.mensagem}
+        />
+      </div>
 
-      <label htmlFor="motivo">Motivo</label>
-      <select value={motivo} name="motivo" onChange={(e) => setMotivo(e.target.value)}>
-        <option value="">Selecione o motivo</option>
-        <option value="FeedBack">FeedBack</option>
-        <option value="Dúvida">Dúvida</option>
-        <option value="Proposta">Proposta</option>
-        <option value="Outro">Outro</option>
-      </select>
-
-      <label htmlFor="mensagem">Mensagem</label>
-      <input
-        type="text"
-        name="mensagem"
-        placeholder="Mensagem"
-        onChange={(e) => setMensagem(e.target.value)}
-        value={mensagem}
-      />
-
-      <input type="submit" value="Enviar" />
+      <input type="submit" value="Enviar" className={styles.enviar}/>
     </form>
   );
 }

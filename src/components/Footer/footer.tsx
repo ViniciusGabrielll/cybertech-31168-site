@@ -4,6 +4,7 @@ import logo from "../../assets/images/logo.png";
 import instagramIcon from "../../assets/images/icons/Instagram.png";
 import gmailIcon from "../../assets/images/icons/Gmail.png";
 import Form from "../Form/form";
+import patrocinadores from "../../assets/images/patrocinadoresFooter.png"
 
 function Footer() {
 
@@ -28,9 +29,13 @@ function Footer() {
           </a>
         </article>
 
-        <article>
+        <article className={styles.contatoFooter}>
           <h4>Manda um email!</h4>
           <Form/>
+        </article>
+
+        <article>
+          <img src={patrocinadores} className={styles.footerPatrocinadores}></img>
         </article>
       </section>
     </footer>
