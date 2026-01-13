@@ -17,14 +17,23 @@
   margin-top: 100px;
 }
 .cyberExperienceContainer article {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .impactoContainer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .First {
+    width: 150px;
+    padding-top: 50px;
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding-bottom: 100px;
+    justify-self: center;
+  }
 }

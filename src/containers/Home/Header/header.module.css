@@ -56,3 +56,26 @@
   z-index: -1;
   rotate: 15deg;
 }
+
+@media (max-width: 768px) {
+  .headerContainer {
+    height: 500px;
+    padding: 10px;
+    padding-top: 120px;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .idEquipe {
+    font-size: 10px;
+  }
+
+  .textsContainer {
+    position: relative;
+    width: 100%;
+  }
+}

@@ -20,7 +20,8 @@ p {
   font-size: 20px;
   text-align: justify;
 }
-h3, span {
+h3,
+span {
   font-family: "Anton", sans-serif;
   font-size: 80px;
   font-weight: 300;
@@ -64,7 +65,7 @@ section img {
 }
 
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .red {
@@ -74,4 +75,49 @@ section img {
 .buttonsContainer {
   display: flex;
   gap: 50px;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  h3,
+  span {
+    font-family: "Anton", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  h4 {
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    line-height: 1.1;
+  }
+  h2 {
+    display: none;
+  }
+
+  section {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 50px;
+  }
 }
