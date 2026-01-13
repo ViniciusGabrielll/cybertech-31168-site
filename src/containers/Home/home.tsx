@@ -2,8 +2,6 @@ import styles from "./home.module.css";
 import Button from "../../components/Button/button";
 import Footer from "../../components/Footer/footer";
 import NavBar from "../../components/NavBar/navBar";
-import instagramIcon from "../../assets/images/icons/InstagramPuro.png";
-import redirectIcon from "../../assets/images/icons/redirect.png";
 import First from "../../assets/images/First.png";
 import FTCSobreImg from "../../assets/images/OQueEFTC.png";
 import quemSomos from "../../assets/images/QuemSomos.png";
@@ -11,34 +9,14 @@ import cyberExperiencePernambuco from "../../assets/images/cyberExperiencePernam
 import cyberExperienceEscolas from "../../assets/images/cyberExperienceEscolas.png";
 import temporadasImg from "../../assets/images/temporadasImg.png";
 import patrocinadoresImg from "../../assets/images/patrocinadores.png";
+import Header from "./Header/header";
+import redirectIcon from "../../assets/images/icons/redirect.png";
 
 function Home() {
   return (
     <>
       <NavBar />
-      <header className={styles.headerContainer}>
-        <div className={styles.textsContainer}>
-          <div className={styles.titleContainer}>
-            <div>
-              <h1 className="italic">CYBER</h1>
-              <h1>TECH</h1>
-            </div>
-            <h1 className={styles.idEquipe}>#31168</h1>
-          </div>
-
-          <p className={styles.textHeader}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            voluptatem accusantium velit rerum beatae voluptatibus minus, aut
-            at, atque porro perferendis quod odio. Pariatur harum blanditiis
-            numquam laboriosam natus cum.
-          </p>
-
-          <div className={styles.buttonsContainer}>
-            <Button link="" text="Sobre nós" icon={redirectIcon} />
-            <Button link="" text="Instagram" icon={instagramIcon} />
-          </div>
-        </div>
-      </header>
+      <Header />
       <main>
         <img src={First} alt="Imagem FTC" className={styles.First} />
         <section>
@@ -150,14 +128,19 @@ function Home() {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Excepturi sapiente itaque quisquam quos aut sed, harum nemo
                   neque enim saepe reprehenderit, nisi consequuntur eos.
-                  Molestias ratione soluta provident aspernatur doloremque!Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi sapiente itaque quisquam quos aut sed, harum nemo
-                  neque enim saepe reprehenderit, nisi consequuntur eos.
-                  Molestias ratione soluta provident aspernatur doloremque!
+                  Molestias ratione soluta provident aspernatur doloremque!Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                  sapiente itaque quisquam quos aut sed, harum nemo neque enim
+                  saepe reprehenderit, nisi consequuntur eos. Molestias ratione
+                  soluta provident aspernatur doloremque!
                 </p>
                 <div className={styles.buttonsContainer}>
-                  <Button link="" text="Saiba mais" icon={redirectIcon}/>
-                  <Button link="" text="Tornar-se Patrocinador" icon={redirectIcon}/>
+                  <Button link="" text="Saiba mais" icon={redirectIcon} />
+                  <Button
+                    link=""
+                    text="Tornar-se Patrocinador"
+                    icon={redirectIcon}
+                  />
                 </div>
               </div>
             </div>
