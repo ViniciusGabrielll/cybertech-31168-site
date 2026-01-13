@@ -110,7 +110,7 @@ function Home() {
               pariatur dolore accusamus inventore alias necessitatibus corporis
               eos laboriosam fugit doloribus?
             </p>
-            <div className={styles.buttonsContainer}>
+            <div className="buttonsContainer">
               <Button link="" text="Into The Deep" icon={redirectIcon} />
               <Button link="" text="Decode" icon={redirectIcon} />
             </div>
@@ -134,7 +134,7 @@ function Home() {
                   saepe reprehenderit, nisi consequuntur eos. Molestias ratione
                   soluta provident aspernatur doloremque!
                 </p>
-                <div className={styles.buttonsContainer}>
+                <div className="buttonsContainer">
                   <Button link="" text="Saiba mais" icon={redirectIcon} />
                   <Button
                     link=""

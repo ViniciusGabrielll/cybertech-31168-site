@@ -70,3 +70,8 @@ section img {
 .red {
   color: var(--primeira-cor);
 }
+
+.buttonsContainer {
+  display: flex;
+  gap: 50px;
+}

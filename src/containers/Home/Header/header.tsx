@@ -23,7 +23,7 @@ function Header() {
           laboriosam natus cum.
         </p>
 
-        <div className={styles.buttonsContainer}>
+        <div className="buttonsContainer">
           <Button link="" text="Sobre nós" icon={redirectIcon} />
           <Button link="" text="Instagram" icon={instagramIcon} />
         </div>

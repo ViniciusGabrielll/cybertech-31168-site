@@ -45,11 +45,6 @@
   padding-bottom: 40px;
 }
 
-.buttonsContainer {
-  display: flex;
-  gap: 50px;
-}
-
 .quadradoVermelho {
   position: absolute;
   background-color: var(--primeira-cor);
