@@ -6,10 +6,25 @@
   width: 100%;
   height: 800px;
   padding: var(--padding-page);
+  z-index: 1;
+  overflow: hidden;
 }
 
 .textsContainer {
+  position: relative;
   width: 40%;
+  z-index: 1;
+  animation: headerAnim 02s ease forwards;
+}
+
+@keyframes headerAnim {
+  from {
+    transform: translateX(-1000px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
 }
 
 .titleContainer {
@@ -33,4 +48,16 @@
 .buttonsContainer {
   display: flex;
   gap: 50px;
+}
+
+.quadradoVermelho {
+  position: absolute;
+  background-color: var(--primeira-cor);
+  width: 180%;
+  height: 1200px;
+  top: -300px;
+  left: -300px;
+  filter: opacity(0.77);
+  z-index: -1;
+  rotate: 15deg;
 }

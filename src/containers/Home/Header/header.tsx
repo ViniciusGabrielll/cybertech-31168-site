@@ -7,6 +7,7 @@ function Header() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.textsContainer}>
+        <div className={styles.quadradoVermelho}></div>
         <div className={styles.titleContainer}>
           <div>
             <h1 className="italic">CYBER</h1>
