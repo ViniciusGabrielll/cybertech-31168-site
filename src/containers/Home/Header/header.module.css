@@ -48,7 +48,7 @@
 .quadradoVermelho {
   position: absolute;
   background-color: var(--primeira-cor);
-  width: 180%;
+  width: 900px;
   height: 1200px;
   top: -300px;
   left: -300px;
@@ -60,8 +60,8 @@
 @media (max-width: 768px) {
   .headerContainer {
     height: 500px;
-    padding: 10px;
-    padding-top: 120px;
+    padding: 20px;
+    padding-top: 90px;
     z-index: 1;
     overflow: hidden;
     display: flex;
@@ -71,7 +71,7 @@
   }
 
   .idEquipe {
-    font-size: 10px;
+    font-size: 50px;
   }
 
   .textsContainer {
@@ -84,5 +84,12 @@
     font-size: 16px;
     padding-top: 10px;
     padding-bottom: 40px;
+
+    .titleContainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

@@ -17,6 +17,7 @@ function NavBar() {
 
       if (currentScrollY > lastScrollY.current) {
         setHidden(true);
+        setLinksHamburguer(false);
       } else {
         setHidden(false);
       }
@@ -36,7 +37,7 @@ function NavBar() {
     <nav className={`${styles.container} ${hidden ? styles.hidden : ""}`}>
       <div>
         <div>
-          <button className={styles.menuToggle} onClick={toggle}>
+          <button className={`${styles.menuToggle} ${linksHamburguer ? styles.botaoCinza : ""}`} onClick={toggle}>
             ☰
           </button>
 

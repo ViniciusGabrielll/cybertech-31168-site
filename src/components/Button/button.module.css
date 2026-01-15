@@ -31,11 +31,11 @@
 
 @media (max-width: 768px) {
   .button {
-    width: 100px;
+    width: 140px;
   }
   .button p {
     color: white;
-    font-size: 10px;
+    font-size: 16px;
     font-weight: 500;
   }
 

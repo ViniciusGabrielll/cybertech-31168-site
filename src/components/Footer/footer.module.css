@@ -71,8 +71,14 @@
     flex-direction: column;
   }
 
+  .footerContainer section article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .footerPatrocinadores {
-    width: 80%;
+    width: 50%;
+    padding-bottom: 50px;
   }
   .footerLogo {
     position: absolute;
