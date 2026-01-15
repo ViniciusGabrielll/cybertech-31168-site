@@ -16,16 +16,16 @@
   gap: 20px;
 }
 
-
 .form input,
-select, textarea {
+select,
+textarea {
   padding: 10px;
   border-radius: 10px;
   outline: none;
   border: none;
 }
 
-.form textarea { 
+.form textarea {
   min-height: 100px;
   resize: vertical;
   text-align: justify;
@@ -33,9 +33,20 @@ select, textarea {
 
 .enviar {
   cursor: pointer;
-  transition: all .1s;
+  transition: all 0.1s;
 }
 .enviar:hover {
   background-color: var(--primeira-cor);
   color: white;
+}
+
+@media (max-width: 768px) {
+  .form {
+    gap: 10px;
+  }
+
+  .form .informacoes {
+    display: flex;
+    gap: 20px;
+  }
 }

@@ -77,6 +77,14 @@ section img {
   gap: 50px;
 }
 
+.hidden {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
 @media (max-width: 768px) {
   p {
     font-size: 16px;
@@ -119,5 +127,9 @@ section img {
     align-items: center;
     text-align: start;
     gap: 50px;
+  }
+
+  .buttonsContainer {
+    gap: 20px;
   }
 }

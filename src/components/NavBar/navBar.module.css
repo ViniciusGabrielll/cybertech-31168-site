@@ -47,6 +47,24 @@
 }
 
 @media (max-width: 768px) {
+  .container div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 80px;
+    right: 0px;
+    left: auto;
+  }
+
+  .container div .navLinks {
+    display: none;
+  }
+
+  .container div .active {
+    display: flex;
+  }
+
   .container {
     height: 60px;
     background-color: white;
@@ -60,10 +78,7 @@
     z-index: 2;
   }
 
-  .logo {
-    position: absolute;
-    width: 60px;
-    top: 0px;
-    left: 10px;
+  .icon {
+    width: 10px;
   }
 }
