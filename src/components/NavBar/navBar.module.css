@@ -50,6 +50,10 @@
   display: none;
 }
 
+.linkNegrito {
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .container div {
     display: flex;

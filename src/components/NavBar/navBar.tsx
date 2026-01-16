@@ -5,6 +5,7 @@ import Dropdown from "../DropdownButton/dropDown";
 import logo from "../../assets/images/logo.png";
 import instagramIcon from "../../assets/images/icons/Instagram.png";
 import gmailIcon from "../../assets/images/icons/Gmail.png";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   const [hidden, setHidden] = useState(false);
@@ -46,8 +47,8 @@ function NavBar() {
               linksHamburguer ? styles.active : ""
             }`}
           >
-            <a href="">Início</a>
-            <a href="">Sobre</a>
+            <NavLink  to="/" className={({isActive}) => isActive ? styles.linkNegrito  : ""}>Início</NavLink>
+            <NavLink  to="/sobre" className={({isActive}) => isActive ? styles.linkNegrito  : ""}>Sobre</NavLink>
             <a href="">Contato</a>
             <a href="">Patrocinadores</a>
             <Dropdown />

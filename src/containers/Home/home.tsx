@@ -15,7 +15,6 @@ import redirectIcon from "../../assets/images/icons/redirect.png";
 function Home() {
   return (
     <>
-      <NavBar />
       <Header />
       <main>
         <img src={First} alt="Imagem FTC" className={styles.First} />
@@ -144,8 +143,6 @@ function Home() {
           </article>
         </section>
       </main>
-
-      <Footer />
     </>
   );
 }
