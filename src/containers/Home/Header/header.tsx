@@ -17,10 +17,9 @@ function Header() {
         </div>
 
         <p className={styles.textHeader}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-          voluptatem accusantium velit rerum beatae voluptatibus minus, aut at,
-          atque porro perferendis quod odio. Pariatur harum blanditiis numquam
-          laboriosam natus cum.
+          Cyber Tech é uma equipe de robótica do SESI Moreno que compete na
+          FIRST® Tech Challenge, unindo tecnologia, inovação e trabalho em
+          equipe para transformar conhecimento em impacto positivo.
         </p>
 
         <div className="buttonsContainer">

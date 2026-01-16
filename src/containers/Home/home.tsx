@@ -26,14 +26,12 @@ function Home() {
               O que é a <span className="italic red">FTC</span>
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus inventore vero assumenda voluptatibus dolor pariatur
-              ipsa recusandae vel facere animi voluptate magni dolores est
-              veritatis repellendus, cum adipisci in placeat?Lorem ipsum dolor
-              sit amet consectetur, adipisicing elit. Temporibus inventore vero
-              assumenda voluptatibus dolor pariatur ipsa recusandae vel facere
-              animi voluptate magni dolores est veritatis repellendus, cum
-              adipisci in placeat?
+              A FIRST® Tech Challenge (FTC) é uma competição internacional de
+              robótica para estudantes do ensino médio, na qual equipes
+              projetam, constroem e programam robôs para enfrentar desafios
+              anuais. Mais do que tecnologia, a FTC promove trabalho em equipe,
+              inovação, pensamento crítico e impacto positivo na comunidade,
+              sempre guiada pelos valores da FIRST®.
             </p>
           </article>
           <img
@@ -50,17 +48,17 @@ function Home() {
               <span className="italic">somos</span>
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-              veritatis at? Quasi provident voluptatem quam debitis doloribus
-              exercitationem accusamus maxime saepe aspernatur sapiente, laborum
-              nam tenetur quidem sed porro unde!Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Omnis, veritatis at? Quasi provident
-              voluptatem quam debitis doloribus exercitationem accusamus maxime
-              saepe aspernatur sapiente, laborum nam tenetur quidem sed porro
-              undeLorem ipsum dolor sit amet consectetur adipisicing elit.
-              Omnis, veritatis at? Quasi provident voluptatem quam debitis
-              doloribus exercitationem accusamus maxime saepe aspernatur
-              sapiente, laborum nam tenetur quidem sed porro unde
+              Somos uma equipe de robótica do SESI Moreno que iniciou sua
+              trajetória no programa FIRST® Tech Challenge (FTC) em 29 de maio
+              de 2025, após a temporada Into the Deep. Vivemos nossa primeira
+              temporada no desafio DECODE, movidos pelos valores da FIRST®, que
+              orientam nossas ações e nossa forma de aprender, colaborar e
+              inovar. Nossa equipe é composta por 15 estudantes, 2 mentores e 2
+              técnicos, unidos pelo propósito de desenvolver habilidades em
+              educação tecnológica, pensamento crítico e competências pessoais.
+              Organizamos nossa atuação em eixos estratégicos que fortalecem
+              nosso compromisso com a inovação, o trabalho em equipe e o impacto
+              positivo na comunidade.
             </p>
             <Button link="" text="Sobre nós" icon={redirectIcon} />
           </article>
@@ -70,16 +68,11 @@ function Home() {
           <article>
             <h3 className="italic">CYBERSTART</h3>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              O projeto visa implementar e oferecer suporte a equipes de
+              robótica, atuando como uma incubadora de talentos na Região
+              Metropolitana do Recife. Buscamos promover inovação e protagonismo
+              juvenil, preparando estudantes para competições e projetos que
+              desenvolvam habilidades tecnológicas, criativas e colaborativas.
             </p>
           </article>
           <article>
@@ -101,14 +94,18 @@ function Home() {
           <article>
             <h3>Temporadas</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis, veniam, dolor nulla aspernatur quos provident atque
-              sed delectus ratione pariatur dolore accusamus inventore alias
-              necessitatibus corporis eos laboriosam fugit doloribus?Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Blanditiis, veniam,
-              dolor nulla aspernatur quos provident atque sed delectus ratione
-              pariatur dolore accusamus inventore alias necessitatibus corporis
-              eos laboriosam fugit doloribus?
+              Nossa trajetória na FIRST® Tech Challenge (FTC) começou com a
+              participação no off-season da temporada Into the Deep, que marcou
+              nosso primeiro contato com a robótica competitiva e com os valores
+              da FIRST®. Essa experiência foi fundamental para o aprendizado
+              inicial, integração da equipe e desenvolvimento das primeiras
+              habilidades técnicas e colaborativas. Na temporada seguinte,
+              participamos do desafio DECODE, que representou um passo
+              importante na consolidação da equipe, no aprimoramento técnico e
+              no fortalecimento do trabalho em equipe. Cada temporada contribuiu
+              para nossa evolução, ampliando nosso conhecimento, nossa visão de
+              futuro e nosso compromisso com a inovação e o impacto positivo na
+              comunidade.
             </p>
             <div className="buttonsContainer">
               <Button link="" text="Into The Deep" icon={redirectIcon} />
@@ -125,14 +122,14 @@ function Home() {
             <div>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi sapiente itaque quisquam quos aut sed, harum nemo
-                  neque enim saepe reprehenderit, nisi consequuntur eos.
-                  Molestias ratione soluta provident aspernatur doloremque!Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-                  sapiente itaque quisquam quos aut sed, harum nemo neque enim
-                  saepe reprehenderit, nisi consequuntur eos. Molestias ratione
-                  soluta provident aspernatur doloremque!
+                  Nesta primeira temporada, contamos com o apoio de grandes
+                  parceiros que acreditam no potencial da nossa equipe. Juntos,
+                  estamos promovendo não apenas a evolução técnica e o
+                  aprimoramento em programação, mas também ampliando o impacto
+                  social do nosso projeto. Cada parceiro desempenha um papel
+                  essencial para que possamos alcançar nossos objetivos e
+                  transformar ideias em resultados. É graças a essa colaboração
+                  que conseguimos avançar, inovar e inspirar.
                 </p>
                 <div className="buttonsContainer">
                   <Button link="" text="Saiba mais" icon={redirectIcon} />
