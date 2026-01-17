@@ -1,16 +1,17 @@
 import { useState } from "react";
 import styles from "./dropDown.module.css"
+import { NavLink } from "react-router-dom";
 
 function Dropdown() {
   const [open, setOpen] = useState(false);
 
   return (
     <div className={styles.container}>
-      <a onClick={() => setOpen(!open)}>Temporadas</a>
+    <a onClick={() => setOpen(!open)}>Temporadas</a>
 
       {open && (
         <div>
-          <a href="">Into The Deep</a>
+          <NavLink  to="/temporadas/intoTheDeep" className={({isActive}) => isActive ? "negrito"  : ""} onClick={() => setOpen(false)}>Into The Deep</NavLink>
           <a href="">Decode</a>
         </div>
       )}

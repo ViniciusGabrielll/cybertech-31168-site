@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar/navBar.tsx";
 import Sobre from "./containers/Sobre/sobre.tsx";
 import Footer from "./components/Footer/footer.tsx";
+import IntoTheDeep from "./containers/Temporadas/IntoTheDeep/intoTheDeep.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/temporadas/intoTheDeep" element={<IntoTheDeep/>}/>
       </Routes>
     </BrowserRouter>
     <Footer/>

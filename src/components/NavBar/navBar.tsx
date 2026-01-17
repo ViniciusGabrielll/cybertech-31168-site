@@ -47,8 +47,8 @@ function NavBar() {
               linksHamburguer ? styles.active : ""
             }`}
           >
-            <NavLink  to="/" className={({isActive}) => isActive ? styles.linkNegrito  : ""}>Início</NavLink>
-            <NavLink  to="/sobre" className={({isActive}) => isActive ? styles.linkNegrito  : ""}>Sobre</NavLink>
+            <NavLink  to="/" className={({isActive}) => isActive ? "negrito"  : ""}>Início</NavLink>
+            <NavLink  to="/sobre" className={({isActive}) => isActive ? "negrito"  : ""}>Sobre</NavLink>
             <a href="">Contato</a>
             <a href="">Patrocinadores</a>
             <Dropdown />

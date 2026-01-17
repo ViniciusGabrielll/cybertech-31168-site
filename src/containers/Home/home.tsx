@@ -111,7 +111,7 @@ function Home() {
           </article>
           <img src={temporadasImg} alt="Temporadas que participamos" />
         </section>
-        <section>
+        <section className="ultimaSection">
           <h2>Patrocinadores</h2>
           <img src={patrocinadoresImg} alt="Nossos Patrocinadores" />
           <article>

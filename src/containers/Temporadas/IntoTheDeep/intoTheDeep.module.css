@@ -1,0 +1,95 @@
+.header {
+  height: 700px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #a2bced;
+  background: linear-gradient(
+    45deg,
+    rgb(147, 173, 222) 30%,
+    rgb(237, 243, 255) 100%
+  );
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.header h1 {
+  color: #000291;
+  z-index: 1;
+  animation: titleAnim 2s;
+}
+
+@keyframes titleAnim {
+  0% {
+    transform: translate(0px, -500px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.fundoHeader {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.main {
+  height: 2000px;
+  background: #181bcc;
+  background: linear-gradient(180deg, #181bcc 0%, rgba(12, 13, 56, 1) 100%);
+}
+
+.ondas {
+  background-image: url("../../../assets/images/ondas.png");
+  position: absolute;
+  background-size: 400px;
+  background-repeat: repeat-x;
+
+  width: 200%;
+  height: 50px;
+  bottom: 0px;
+  animation: ondasAnim infinite 4s both;
+  z-index: 2;
+}
+
+.rastroOnda {
+  background-image: url("../../../assets/images/ondas.png");
+  filter: opacity(0.1);
+  position: absolute;
+  background-size: 400px;
+  background-repeat: repeat-x;
+
+  width: 200%;
+  height: 50px;
+  bottom: 0px;
+  animation: rastroAnim infinite 4s ease-in-out;
+  z-index: 2;
+}
+
+@keyframes rastroAnim {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 00px);
+  }
+  100% {
+    transform: translate(0px, 40px);
+  }
+}
+
+
+@keyframes ondasAnim {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(50px, 30px);
+  }
+  100% {
+    transform: translate(100px, 0px);
+  }
+}
