@@ -54,7 +54,7 @@
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .container div {
     display: flex;
     justify-content: space-between;

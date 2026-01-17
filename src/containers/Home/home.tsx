@@ -1,7 +1,5 @@
 import styles from "./home.module.css";
 import Button from "../../components/Button/button";
-import Footer from "../../components/Footer/footer";
-import NavBar from "../../components/NavBar/navBar";
 import First from "../../assets/images/First.png";
 import FTCSobreImg from "../../assets/images/OQueEFTC.png";
 import quemSomos from "../../assets/images/QuemSomos.png";

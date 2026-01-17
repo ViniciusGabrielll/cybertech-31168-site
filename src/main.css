@@ -85,7 +85,7 @@ section img {
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   p {
     font-size: 16px;
     text-align: justify;

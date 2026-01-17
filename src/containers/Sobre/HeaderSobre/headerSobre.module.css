@@ -1,0 +1,74 @@
+.headerContainer {
+  background-image: url("../../../assets/images/fundoSobre.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  padding: var(--padding-page);
+  z-index: 1;
+  overflow: hidden;
+  color: white;
+  position: relative;
+}
+
+.textsContainer {
+  position: absolute;
+  width: 37vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  left: auto;
+  right: 120px;
+  animation: headerAnim 02s ease forwards;
+}
+
+@keyframes headerAnim {
+  from {
+    transform: translateX(1000px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.quadradoCinza {
+  position: absolute;
+  background-color: var(--terceira-cor);
+  width: 60vw;
+  height: 1200px;
+  right: -300px;
+  top: -300px;
+  filter: opacity(0.85);
+  z-index: -1;
+  rotate: -10deg;
+}
+
+@media (max-width: 1500px) {
+  .headerContainer {
+    height: 500px;
+    padding: 20px;
+    padding-top: 90px;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .textsContainer {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    left: auto;
+    right: auto;
+  }
+
+  .quadradoCinza {
+    width: 200vw;
+  }
+}

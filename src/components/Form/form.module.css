@@ -40,7 +40,7 @@ textarea {
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .form {
     gap: 10px;
   }
