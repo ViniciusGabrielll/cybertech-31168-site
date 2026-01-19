@@ -37,9 +37,11 @@
 }
 
 .main {
-  height: 2000px;
+  display: flex;
+  flex-direction: column;
   background: #181bcc;
-  background: linear-gradient(180deg, #181bcc 0%, rgba(12, 13, 56, 1) 100%);
+  background: linear-gradient(180deg, #181bcc 0%, rgb(8, 8, 38) 100%);
+  color: white;
 }
 
 .ondas {
@@ -81,7 +83,6 @@
   }
 }
 
-
 @keyframes ondasAnim {
   0% {
     transform: translate(0px, 0px);
@@ -92,4 +93,36 @@
   100% {
     transform: translate(100px, 0px);
   }
+}
+
+@keyframes subir {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-350px);
+    opacity: 0;
+  }
+}
+
+.timeLine {
+  position: absolute;
+  left: 10px;
+  width: 5px; 
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.timeText {
+  position: absolute;
+  left: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transform: translateY(-50px);
 }
