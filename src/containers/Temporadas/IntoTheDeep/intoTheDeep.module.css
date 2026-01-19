@@ -37,6 +37,7 @@
 }
 
 .main {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: #181bcc;
@@ -112,7 +113,7 @@
 .timeLine {
   position: absolute;
   left: 10px;
-  width: 5px; 
+  width: 5px;
   height: 100%;
   border-radius: 10px;
   background-color: white;

@@ -1,6 +1,8 @@
 import styles from "./intoTheDeep.module.css";
 import fundoIntoTheDeep from "../../../assets/images/fundoIntoTheDeep.png";
 import fundacao from "../../../assets/images/Fundacao.png";
+import kit from "../../../assets/images/kit.png";
+import mentoria from "../../../assets/images/mentoria.png";
 
 function IntoTheDeep() {
   return (
@@ -43,6 +45,7 @@ function IntoTheDeep() {
         <section>
           <h2>Recebimento do KIT</h2>
           <span className={styles.timeText}>Junho</span>
+          <img src={kit} alt="Kit Start da Into The Deep" />
           <article>
             <h3>Recebimento do KIT</h3>
             <p>
@@ -52,6 +55,20 @@ function IntoTheDeep() {
               estruturar o desenvolvimento do projeto.
             </p>
           </article>
+        </section>
+        <section>
+          <h2>Mentoria RevAtom</h2>
+          <article>
+            <h3>Mentoria com a <span className="italic">RevAtom</span></h3>
+            <p>
+              <ul>
+                <li>Objetivo da mentoria – auxiliar no desenvolvimento e adaptação ao FTC.</li>
+                <li>Importância da mentoria – aprendizado acelerado e fortalecimento da equipe iniciante.</li>
+                <li>Impacto na evolução – base sólida para as próximas etapas da temporada.</li>
+              </ul>
+            </p>
+          </article>
+          <img src={mentoria} alt="Mentoria Com a RevAtom" />
         </section>
       </main>
     </>
