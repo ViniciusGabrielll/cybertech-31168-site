@@ -1,4 +1,5 @@
 import HeaderSobre from "./HeaderSobre/headerSobre";
+import Competidor from "../../components/Competidor/competidor.tsx";
 
 function Sobre() {
   return (
@@ -21,6 +22,9 @@ function Sobre() {
             </p>
             <p></p>
           </article>
+        </section>
+        <section>
+          <Competidor imagem={""} nome="Teste" idade={10} area="Programador" expectativa="Teste"/>
         </section>
       </main>
     </>
