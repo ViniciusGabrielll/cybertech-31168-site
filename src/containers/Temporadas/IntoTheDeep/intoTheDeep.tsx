@@ -5,6 +5,7 @@ import kit from "../../../assets/images/kit.png";
 import mentoria from "../../../assets/images/mentoria.png";
 import robo from "../../../assets/images/roboIntoTheDeep.png";
 import programacao from "../../../assets/images/programacaoIntoTheDeep.png";
+import impacto from "../../../assets/images/impactoIntoTheDeep.png";
 
 function IntoTheDeep() {
   return (
@@ -123,6 +124,7 @@ function IntoTheDeep() {
         </section>
         <section className="ultimaSection">
           <h2>Impacto</h2>
+          <img src={impacto} alt="Caixas de EV3 doadas" />
           <article>
             <h3>Impacto</h3>
             <p className="negrito">Projeto CyberStart:</p>
