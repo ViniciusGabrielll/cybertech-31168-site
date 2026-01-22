@@ -72,6 +72,10 @@ section img {
   color: var(--primeira-cor);
 }
 
+.gray {
+  color: var(--segunda-cor);
+}
+
 .buttonsContainer {
   display: flex;
   gap: 50px;
@@ -91,6 +95,11 @@ section img {
 
 .ultimaSection {
   padding-bottom: 100px;
+}
+
+.backgroundRed {
+  background-color: var(--primeira-cor);
+  color: white;
 }
 
 @media (max-width: 1200px) {

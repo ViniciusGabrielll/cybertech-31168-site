@@ -1,19 +1,23 @@
+import styles from "./competidor.module.css";
+
 type CompetidorProps = {
+  cargo: string;
   imagem: string;
   nome: string;
   idade: number;
   area: string;
-  expectativa: string;
 };
 
-function Competidor({ imagem, nome, idade, area, expectativa } : CompetidorProps) {
+function Competidor({ cargo, imagem, nome, idade, area }: CompetidorProps) {
   return (
-    <div>
+    <div className={styles.card}>
+      <h4><span>{cargo}</span></h4>
       <img src={imagem} alt={`Foto de ${nome}`} />
-      <h4>Nome: {nome}</h4>
-      <h4>Idade: {idade}</h4>
-      <h4>Área: {area}</h4>
-      <h4>Expectativa: {expectativa}</h4>
+      <div>
+        <h4><span>Nome:</span> {nome}</h4>
+        <h4><span>Idade:</span> {idade}</h4>
+        <h4><span>Área:</span> {area}</h4>
+      </div>
     </div>
   );
 }
