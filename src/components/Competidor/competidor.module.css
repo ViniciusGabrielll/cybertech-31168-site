@@ -1,7 +1,7 @@
 .card {
   background-color: #e1e1e1;
   width: 250px;
-  height: 400px;
+  height: 430px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,8 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.card h4, .card span{
+.card h4,
+.card span {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -19,15 +20,18 @@
 }
 
 .card span {
-    margin: 0px;
-    font-weight: bold;
+  margin: 0px;
+  font-weight: bold;
 }
 
 .card img {
-    width: 100%;
-    background-color: white;
+  width: 100%;
+  background-color: white;
 }
 
 .card div {
-    align-self: flex-start;
+  align-self: flex-start;
+}
+
+@media (max-width: 1200px) {
 }

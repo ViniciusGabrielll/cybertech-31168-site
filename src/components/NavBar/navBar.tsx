@@ -50,7 +50,6 @@ function NavBar() {
             <NavLink  to="/" className={({isActive}) => isActive ? "negrito"  : ""}>Início</NavLink>
             <NavLink  to="/sobre" className={({isActive}) => isActive ? "negrito"  : ""}>Sobre</NavLink>
             <a href="">Contato</a>
-            <a href="">Patrocinadores</a>
             <Dropdown />
           </div>
         </div>
