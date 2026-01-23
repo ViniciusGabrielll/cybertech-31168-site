@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar/navBar.tsx";
 import Sobre from "./containers/Sobre/sobre.tsx";
 import Footer from "./components/Footer/footer.tsx";
 import IntoTheDeep from "./containers/Temporadas/IntoTheDeep/intoTheDeep.tsx";
+import Contato from "./containers/Contato/contato.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/contato" element={<Contato/>}/>
         <Route path="/temporadas/intoTheDeep" element={<IntoTheDeep/>}/>
       </Routes>
     </BrowserRouter>
