@@ -12,7 +12,7 @@ function Dropdown() {
       {open && (
         <div>
           <NavLink  to="/temporadas/intoTheDeep" className={({isActive}) => isActive ? "negrito"  : ""} onClick={() => setOpen(false)}>Into The Deep</NavLink>
-          <a href="">Decode</a>
+          <NavLink  to="/temporadas/decode" className={({isActive}) => isActive ? "negrito"  : ""}>Decode</NavLink>
         </div>
       )}
     </div>
