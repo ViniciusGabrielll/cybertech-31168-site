@@ -8,18 +8,20 @@ import Sobre from "./containers/Sobre/sobre.tsx";
 import Footer from "./components/Footer/footer.tsx";
 import IntoTheDeep from "./containers/Temporadas/IntoTheDeep/intoTheDeep.tsx";
 import Contato from "./containers/Contato/contato.tsx";
+import ScrollToTop from "./components/ScrollToTop/scrolToTop.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-    <NavBar />
+      <ScrollToTop />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
-        <Route path="/contato" element={<Contato/>}/>
-        <Route path="/temporadas/intoTheDeep" element={<IntoTheDeep/>}/>
+        <Route path="/contato" element={<Contato />} />
+        <Route path="/temporadas/intoTheDeep" element={<IntoTheDeep />} />
       </Routes>
     </BrowserRouter>
-    <Footer/>
-  </StrictMode>
+    <Footer />
+  </StrictMode>,
 );

@@ -23,8 +23,12 @@ function Header() {
         </p>
 
         <div className="buttonsContainer">
-          <Button link="" text="Sobre nós" icon={redirectIcon} />
-          <Button link="" text="Instagram" icon={instagramIcon} />
+          <Button link="/sobre" text="Sobre nós" icon={redirectIcon} />
+          <Button
+            link="https://www.instagram.com/equipe.cybertech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            text="Instagram"
+            icon={instagramIcon}
+          />
         </div>
       </div>
     </header>

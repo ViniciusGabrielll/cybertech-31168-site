@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "./button.module.css";
 
 type ButtonProps = {
@@ -9,10 +10,10 @@ type ButtonProps = {
 
 function Button({link, icon, text = "botão"}: ButtonProps) {
     return (
-        <a className={styles.button} href={link}>
+        <NavLink className={styles.button} to={link}>
             <img src={icon}/>
             <p>{text}</p>
-        </a>
+        </NavLink>
     )
 }
 

@@ -57,7 +57,7 @@ function Home() {
               nosso compromisso com a inovação, o trabalho em equipe e o impacto
               positivo na comunidade.
             </p>
-            <Button link="" text="Sobre nós" icon={redirectIcon} />
+            <Button link="/sobre" text="Sobre nós" icon={redirectIcon} />
           </article>
         </section>
         <section className={styles.cyberExperienceContainer}>
@@ -105,7 +105,7 @@ function Home() {
               comunidade.
             </p>
             <div className="buttonsContainer">
-              <Button link="" text="Into The Deep" icon={redirectIcon} />
+              <Button link="/temporadas/intoTheDeep" text="Into The Deep" icon={redirectIcon} />
               <Button link="" text="Decode" icon={redirectIcon} />
             </div>
           </article>
@@ -129,9 +129,8 @@ function Home() {
                   que conseguimos avançar, inovar e inspirar.
                 </p>
                 <div className="buttonsContainer">
-                  <Button link="" text="Saiba mais" icon={redirectIcon} />
                   <Button
-                    link=""
+                    link="/contato"
                     text="Tornar-se Patrocinador"
                     icon={redirectIcon}
                   />
