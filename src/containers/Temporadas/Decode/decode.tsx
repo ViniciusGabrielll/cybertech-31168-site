@@ -1,13 +1,31 @@
 import "../temporadas.css";
 import styles from "./decode.module.css";
 
+import fundo from "../../../assets/images/fundoDecode.png";
+import planejamento from "../../../assets/images/planejamentoDecode.png";
+import cyberExperience from "../../../assets/images/cyberExperience.png";
+import impactosEsperados from "../../../assets/images/impactosEsperadosDecode.png";
+import design from "../../../assets/images/designDecode.png";
+import robo from "../../../assets/images/roboDecode.png";
+import programacao from "../../../assets/images/programacaoDecode.png";
+import Button from "../../../components/Button/button";
+import redirectIcon from "../../../assets/images/icons/redirect.png";
+
 function Decode() {
   return (
     <>
       <header className={styles.header}>
         <h1>Decode</h1>
+        <img src={fundo} className={styles.fundoHeader} />
       </header>
       <main className={styles.main}>
+        <section>
+          <h2>Portfolio</h2>
+          <article>
+            <h3>Confira nosso Portfólio da Decode!</h3>
+            <Button link="/arquivos/portfolioregional2025.pdf" text="Baixar Portfólio" icon={redirectIcon} download/>
+          </article>
+        </section>
         <section className={styles.cyberStart}>
           <h2>CyberStart</h2>
           <article>
@@ -43,6 +61,10 @@ function Decode() {
         </section>
         <section>
           <h2>Planejamento</h2>
+          <img
+            src={planejamento}
+            alt="Planejamento de numero de Equipes que vão ser incluidas no CyberStart"
+          />
           <article>
             <h3>Planejamento</h3>
             <p>
@@ -69,10 +91,18 @@ function Decode() {
               de cidadãos preparados para os desafios do futuro.
             </p>
           </article>
+          <img
+            src={cyberExperience}
+            alt="Foto junto com a Next Level, Equipe fundada pelo CyberStart"
+          />
         </section>
 
         <section>
           <h2>Impactos Esperados</h2>
+          <img
+            src={impactosEsperados}
+            alt="Formação Docente, Participação em Competições e Mentoria e Suporte, são 3 dos pilares do CyberStart"
+          />
           <article>
             <h3>Impactos Esperados</h3>
             <p>
@@ -105,10 +135,12 @@ function Decode() {
               desafios da FTC.
             </p>
           </article>
+          <img src={design} alt="Identidade da Equipe" />
         </section>
 
         <section>
           <h2>Mecânica</h2>
+          <img src={robo} alt="Pitoco, Nosso robô da Decode" />
           <article>
             <h3>Nosso Robô</h3>
             <p>
@@ -137,7 +169,7 @@ function Decode() {
           </article>
         </section>
 
-        <section>
+        <section className="ultimaSection">
           <h2>Programção</h2>
           <article>
             <h3>Programação</h3>
@@ -168,6 +200,10 @@ function Decode() {
               estratégica e evolução contínua do sistema.
             </p>
           </article>
+          <img
+            src={programacao}
+            alt="Funcionamento do Teleoperado e Autônomo"
+          />
         </section>
       </main>
     </>

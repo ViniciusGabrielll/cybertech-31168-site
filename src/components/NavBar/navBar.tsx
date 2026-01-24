@@ -38,7 +38,10 @@ function NavBar() {
     <nav className={`${styles.container} ${hidden ? styles.hidden : ""}`}>
       <div>
         <div>
-          <button className={`${styles.menuToggle} ${linksHamburguer ? styles.botaoCinza : ""}`} onClick={toggle}>
+          <button
+            className={`${styles.menuToggle} ${linksHamburguer ? styles.botaoCinza : ""}`}
+            onClick={toggle}
+          >
             ☰
           </button>
 
@@ -47,9 +50,24 @@ function NavBar() {
               linksHamburguer ? styles.active : ""
             }`}
           >
-            <NavLink  to="/" className={({isActive}) => isActive ? "negrito"  : ""}>Início</NavLink>
-            <NavLink  to="/sobre" className={({isActive}) => isActive ? "negrito"  : ""}>Sobre</NavLink>
-            <NavLink  to="/contato" className={({isActive}) => isActive ? "negrito"  : ""}>Contato</NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "negrito" : "")}
+            >
+              Início
+            </NavLink>
+            <NavLink
+              to="/sobre"
+              className={({ isActive }) => (isActive ? "negrito" : "")}
+            >
+              Sobre
+            </NavLink>
+            <NavLink
+              to="/contato"
+              className={({ isActive }) => (isActive ? "negrito" : "")}
+            >
+              Contato
+            </NavLink>
             <Dropdown />
           </div>
         </div>

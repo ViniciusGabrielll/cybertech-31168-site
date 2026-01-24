@@ -1,4 +1,4 @@
-import "../temporadas.css"
+import "../temporadas.css";
 import styles from "./intoTheDeep.module.css";
 import fundoIntoTheDeep from "../../../assets/images/fundoIntoTheDeep.png";
 import fundacao from "../../../assets/images/Fundacao.png";
@@ -7,6 +7,8 @@ import mentoria from "../../../assets/images/mentoria.png";
 import robo from "../../../assets/images/roboIntoTheDeep.png";
 import programacao from "../../../assets/images/programacaoIntoTheDeep.png";
 import impacto from "../../../assets/images/impactoIntoTheDeep.png";
+import Button from "../../../components/Button/button";
+import redirectIcon from "../../../assets/images/icons/redirect.png";
 
 function IntoTheDeep() {
   return (
@@ -18,6 +20,18 @@ function IntoTheDeep() {
         <img src={fundoIntoTheDeep} className={styles.fundoHeader} />
       </header>
       <main className={styles.main}>
+        <section>
+          <h2>Portfolio</h2>
+          <article>
+            <h3>Confira nosso Portfólio da Into The Deep!</h3>
+            <Button
+              link="/arquivos/PortfolioIntoTheDeep.pdf"
+              text="Baixar Portfólio"
+              icon={redirectIcon}
+              download
+            />
+          </article>
+        </section>
         <div className="timeLine"></div>
         <section>
           <h2>Fundação da equipe</h2>

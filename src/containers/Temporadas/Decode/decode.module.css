@@ -1,5 +1,5 @@
 .header {
-  height: 700px;
+  height: 850px;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -11,7 +11,24 @@
 }
 
 .header h1 {
-    color: black;
+  color: #7c6143;
+  z-index: 1;
+  animation: titleAnim 2s;
+}
+
+.fundoHeader {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+}
+
+@keyframes titleAnim {
+  0% {
+    transform: translate(0px, -500px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 .main {
@@ -22,9 +39,24 @@
 }
 
 .cyberStart {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 .cyberStart article {
-    width: 50%;
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    height: 700px;
+  }
+  
+  .fundoHeader {
+    position: absolute;
+    width: 200%;
+    top: 0px;
+  }
+.cyberStart article {
+  width: 100%;
+}
 }

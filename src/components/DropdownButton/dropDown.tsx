@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./dropDown.module.css"
+import styles from "./dropDown.module.css";
 import { NavLink } from "react-router-dom";
 
 function Dropdown() {
@@ -7,12 +7,24 @@ function Dropdown() {
 
   return (
     <div className={styles.container}>
-    <a onClick={() => setOpen(!open)}>Temporadas</a>
+      <a onClick={() => setOpen(!open)}>Temporadas</a>
 
       {open && (
         <div>
-          <NavLink  to="/temporadas/intoTheDeep" className={({isActive}) => isActive ? "negrito"  : ""} onClick={() => setOpen(false)}>Into The Deep</NavLink>
-          <NavLink  to="/temporadas/decode" className={({isActive}) => isActive ? "negrito"  : ""}>Decode</NavLink>
+          <NavLink
+            to="/temporadas/intoTheDeep"
+            className={({ isActive }) => (isActive ? "negrito" : "")}
+            onClick={() => setOpen(false)}
+          >
+            Into The Deep
+          </NavLink>
+          <NavLink
+            to="/temporadas/decode"
+            className={({ isActive }) => (isActive ? "negrito" : "")}
+            onClick={() => setOpen(false)}
+          >
+            Decode
+          </NavLink>
         </div>
       )}
     </div>
