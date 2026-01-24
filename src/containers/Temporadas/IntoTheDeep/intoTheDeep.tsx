@@ -1,3 +1,4 @@
+import "../temporadas.css"
 import styles from "./intoTheDeep.module.css";
 import fundoIntoTheDeep from "../../../assets/images/fundoIntoTheDeep.png";
 import fundacao from "../../../assets/images/Fundacao.png";
@@ -17,10 +18,10 @@ function IntoTheDeep() {
         <img src={fundoIntoTheDeep} className={styles.fundoHeader} />
       </header>
       <main className={styles.main}>
-        <div className={styles.timeLine}></div>
+        <div className="timeLine"></div>
         <section>
           <h2>Fundação da equipe</h2>
-          <span className={styles.timeText}>Maio</span>
+          <span className="timeText">Maio</span>
           <article>
             <h3>
               Fundação da <span className="italic">Equipe</span>
@@ -47,7 +48,7 @@ function IntoTheDeep() {
         </section>
         <section>
           <h2>Recebimento do KIT</h2>
-          <span className={styles.timeText}>Junho</span>
+          <span className="timeText">Junho</span>
           <img src={kit} alt="Kit Start da Into The Deep" />
           <article>
             <h3>Recebimento do KIT</h3>
