@@ -55,6 +55,7 @@
   .container div {
     display: flex;
     justify-content: space-between;
+    width: 130px;
   }
   .logo {
     width: 80px;

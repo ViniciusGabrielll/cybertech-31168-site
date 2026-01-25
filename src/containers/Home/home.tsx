@@ -106,7 +106,7 @@ function Home() {
             </p>
             <div className="buttonsContainer">
               <Button link="/temporadas/intoTheDeep" text="Into The Deep" icon={redirectIcon} />
-              <Button link="" text="Decode" icon={redirectIcon} />
+              <Button link="/temporadas/decode" text="Decode" icon={redirectIcon} />
             </div>
           </article>
           <img src={temporadasImg} alt="Temporadas que participamos" />

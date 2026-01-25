@@ -23,8 +23,8 @@ function Contato() {
             <a href="https://www.instagram.com/equipe.cybertech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
               Instagram: equipe.cybertech
             </a>
-            <a href="https://www.instagram.com/equipe.cybertech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-              Gmail: equipe.cybertech
+            <a href="https://mail.google.com/mail/?view=cm&to=equipecybertechftc@gmail.com">
+              Gmail: equipecybertechftc@gmail.com
             </a>
           </p>
           <iframe

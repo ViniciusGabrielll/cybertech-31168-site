@@ -74,10 +74,10 @@ function NavBar() {
         <img src={logo} alt="CyberTech Logo" className={styles.logo} />
       </div>
       <div>
-        <a href="">
+        <a href="https://www.instagram.com/equipe.cybertech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
           <img src={instagramIcon} alt="Instagram" className={styles.icon} />
         </a>
-        <a href="">
+        <a href="https://mail.google.com/mail/?view=cm&to=equipecybertechftc@gmail.com">
           <img src={gmailIcon} alt="Gmail" className={styles.icon} />
         </a>
       </div>

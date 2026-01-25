@@ -23,7 +23,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/temporadas/intoTheDeep" element={<IntoTheDeep />} />
         <Route path="/temporadas/decode" element={<Decode />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
-    <Footer />
   </StrictMode>,
 );

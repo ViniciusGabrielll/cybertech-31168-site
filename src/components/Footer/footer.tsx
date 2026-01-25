@@ -5,6 +5,7 @@ import instagramIcon from "../../assets/images/icons/Instagram.png";
 import gmailIcon from "../../assets/images/icons/Gmail.png";
 import Form from "../Form/form";
 import patrocinadores from "../../assets/images/patrocinadoresFooter.png";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,17 +15,30 @@ function Footer() {
       <section>
         <article className={styles.paginasFooter}>
           <h4>Páginas:</h4>
-          <a href="" className={styles.link}>Início</a>
-          <a href="" className={styles.link}>Sobre</a>
-          <a href="" className={styles.link}>Contato</a>
-          <a href="" className={styles.link}>Patrocinadores</a>
+          <NavLink to="/" className={styles.link}>
+            Início
+          </NavLink>
+          <NavLink to="/sobre" className={styles.link}>
+            Sobre
+          </NavLink>
+          <NavLink to="/contato" className={styles.link}>
+            Contato
+          </NavLink>
+          <NavLink to="/temporadas/intoTheDeep" className={styles.link}>
+            Into The Deep
+          </NavLink>
+          <NavLink to="/temporadas/decode" className={styles.link}>
+            Decode
+          </NavLink>
 
           <h4 className="italic">Nos Contate:</h4>
-          <a href="">
+          <a href="https://www.instagram.com/equipe.cybertech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
             <img src={instagramIcon} alt="Instagram" className={styles.icon} />
+            <p>equipe.cybertech</p>
           </a>
-          <a href="">
+          <a href="https://mail.google.com/mail/?view=cm&to=equipecybertechftc@gmail.com">
             <img src={gmailIcon} alt="Gmail" className={styles.icon} />
+            <p>equipecybertechftc@gmail.com</p>
           </a>
         </article>
 
