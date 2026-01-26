@@ -32,10 +32,8 @@ function IntoTheDeep() {
             />
           </article>
         </section>
-        <div className="timeLine"></div>
         <section>
           <h2>Fundação da equipe</h2>
-          <span className="timeText">Maio</span>
           <article>
             <h3>
               Fundação da <span className="italic">Equipe</span>
@@ -62,7 +60,6 @@ function IntoTheDeep() {
         </section>
         <section>
           <h2>Recebimento do KIT</h2>
-          <span className="timeText">Junho</span>
           <img src={kit} alt="Kit Start da Into The Deep" />
           <article>
             <h3>Recebimento do KIT</h3>
