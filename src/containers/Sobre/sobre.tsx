@@ -23,7 +23,7 @@ function Sobre() {
           <h2>Sobre</h2>
           <article>
             <h3>
-              <span className="gray">A nossa</span> Equipe
+              <span className="gray">Nossa</span> Equipe
             </h3>
             <p>
               Somos uma equipe do SESI Moreno, composta por 15 estudantes, 2

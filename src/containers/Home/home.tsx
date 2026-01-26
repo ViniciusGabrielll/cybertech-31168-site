@@ -67,7 +67,7 @@ function Home() {
             <p>
               O projeto visa implementar e oferecer suporte a equipes de
               robótica, atuando como uma incubadora de talentos na Região
-              Metropolitana do Recife. Buscamos promover inovação e protagonismo
+              Metropolitana do Recife e em Moreno. Buscamos promover inovação e protagonismo
               juvenil, preparando estudantes para competições e projetos que
               desenvolvam habilidades tecnológicas, criativas e colaborativas.
             </p>

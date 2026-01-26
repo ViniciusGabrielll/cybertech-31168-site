@@ -42,7 +42,7 @@ function Form() {
     emailJs
       .send(
         "service_o7ooogj",
-        "template_s7v3jsd",
+        "template_1f1smfm",
         templateParams,
         "nz3gLrLYCePlYiNw6"
       )
