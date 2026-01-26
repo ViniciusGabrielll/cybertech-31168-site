@@ -1,6 +1,5 @@
 import Button from "../../../components/Button/button";
 import styles from "./header.module.css";
-import instagramIcon from "../../../assets/images/icons/InstagramPuro.png";
 import redirectIcon from "../../../assets/images/icons/redirect.png";
 
 function Header() {
